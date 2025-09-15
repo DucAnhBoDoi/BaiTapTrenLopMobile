@@ -63,23 +63,26 @@ const styles = StyleSheet.create({
   scrollContent: {
     alignItems: 'center',
   },
-  image: {
-    width: 250,
-    height: 250,
-    marginRight: 15,
-    borderRadius: 10,
-    borderColor: '#000',
+  imageWrapper: {
+    backgroundColor: 'orange', // nền cam
+    borderColor: '#000',       // viền đen
     borderWidth: 3,
+    borderRadius: 15,
+    marginRight: 15,
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    // wrapper to hơn ảnh
+    width: 270,
+    height: 270,
+  },
+  image: {
+    width: 230,
+    height: 230,
+    borderRadius: 10,
+    resizeMode: 'contain',
   },
 
-  imageWrapper: {
-    backgroundColor: 'orange',
-    borderColor: '#000',
-    borderRadius: 15,
-    marginRight: 10,
-    marginLeft: 10,
-    padding: 5,
-  },
 
   input: {
     borderWidth: 1,
